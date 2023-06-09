@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Miroslav Svítok web home</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-size: 26px;
+                font-weight: 600;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 24px;
+                font-weight: 300;
+            }
+        
+            
+
+            footer {
+                padding: 15px;
+                border-top: 2px solid #000;            
+                text-align: center;
+
+            }
+            
+            a {
+                color: black
+            }
+            #content {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                flex-grow: 1;
+                text-align: left;
+
+                max-width: 900px;
+            }
+
+            .mono {
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="content">
+            <h1>Riesenie testu - Internet, webstránky a bezpečnosť na internete (2023 jar)</h1>
+            <p>Na test máte čas do konca hodiny.</p>
+
+            <h2>Časť 1: hrozby a nástrahy internetu</h2>
+            <h2>Časť 2: základy HTML a CSS</h2>
+            <h3>Bodovanie</h3>
+            Za kazdu z uvedenych veci 1 bod:
+            <ul>
+                <li>Spravna struktura HTML (body, head, html)</li>
+                <li>pritomny title</li>
+                <li>pritomny DOCTYPE</li>
+                <li>Nadpis je H1 (alebo H2)</li>
+                <li>Je pouzity niektory z tagov nav, header, footer (aspon jeden)</li>
+                <li>Pritomny obrazok</li>
+                <li>Pritomne menu</li>
+                <li>Pritomna paticka</li>
+                <li>Odkazy v menu su klikatelne, smeruju na bilgym.sk</li>
+                <li>Formatovanie - hlavicka priblizne sedi (farby, medzery, padding)</li>
+                <li>Formatovanie - paticka prilbizne sedi (farby, medzery, padding)</li>
+                <li>Formatovanie - priblizne sedia fonty</li>
+                <li>Formatovanie - obtekanie bocneho a hlavneho stlpca je urobene spravne (cez flexbox, floating alebo ine), nie tabulky. Formatovanie funguje pri roznych velkostiach okna prehliadaca.</li>
+                <li>Formatovanie - priblizne sedi bocny stlpec a hlavny obsah</li>
+            </ul>
+            3b su navyse ak ziak umiestni stranku na internet.
+
+            <h3>Priklad spravneho riesenia</h3>
+            <pre>
+                
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;title&gt;Bilingválne gymnázium C. S. Lewisa&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Trebuchet MS, sans-serif;
+            }
+            p {
+                color: green;
+
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-weight: 300;
+            }
+            header {
+                background-color: #8db44c;
+                border-bottom: 2px solid #29440a;
+                border-top: 30px solid #fff;
+                color: #29440a;
+                font-size: 12px;
+                padding: 15px;
+
+            }
+            footer {
+                padding: 15px;
+                background-color: #646464;
+                border-top: 2px solid #323232;
+                color: #fff;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            nav {
+                padding: 15px;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            ul li {
+                margin: 5px;
+
+            }
+            a {
+                color: black
+            }
+            #main {
+                display: flex;
+                
+            }
+            #content {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                flex-grow: 1;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Bilingválne gymnázium C. S. Lewisa&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;div id=&quot;main&quot;&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;https://bilgym.sk/o-skole/about-us/&quot;&gt;O škole&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;https://bilgym.sk/aktivity/mentoring/&quot;&gt;Aktivity&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;https://bilgym.sk/pre-studentov/hodnotenie/&quot;&gt;Pre študentov&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;section id=&quot;content&quot;&gt;
+                &lt;img alt=&quot;Gymnazium CS Lewisa&quot; src=&quot;https://www.archinfo.sk/image-handler/12231/5d11ea778026d/site-icon/width_936/gymnazium-c-s-lewisa-v-bratislave.jpg&quot;/&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+        
+        &lt;footer&gt;
+            © 2023
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+            </pre>
+            
+        </section>
+        
+        <footer>
+            © 2023 Miroslav Svítok
+        </footer>
+    </body>
+</html>

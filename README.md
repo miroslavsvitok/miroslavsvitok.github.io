@@ -1,1 +1,0 @@
-# miroslavsvitok.github.io
